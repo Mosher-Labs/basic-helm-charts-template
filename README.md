@@ -1,32 +1,33 @@
-# basic-repo-template
+# basic-helm-charts-template
 
-![GitHub branch status](https://img.shields.io/github/checks-status/mosher-labs/basic-repo-template/main)
-![GitHub Issues](https://img.shields.io/github/issues/mosher-labs/basic-repo-template)
-![GitHub last commit](https://img.shields.io/github/last-commit/mosher-labs/basic-repo-template)
-![GitHub repo size](https://img.shields.io/github/repo-size/mosher-labs/basic-repo-template)
-![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/mosher-labs/basic-repo-template)
-![GitHub License](https://img.shields.io/github/license/mosher-labs/basic-repo-template)
+![GitHub branch status](https://img.shields.io/github/checks-status/mosher-labs/basic-helm-charts-template/main)
+![GitHub Issues](https://img.shields.io/github/issues/mosher-labs/basic-helm-charts-template)
+![GitHub last commit](https://img.shields.io/github/last-commit/mosher-labs/basic-helm-charts-template)
+![GitHub repo size](https://img.shields.io/github/repo-size/mosher-labs/basic-helm-charts-template)
+![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/mosher-labs/basic-helm-charts-template)
+![GitHub License](https://img.shields.io/github/license/mosher-labs/basic-helm-charts-template)
 ![GitHub Sponsors](https://img.shields.io/github/sponsors/mosher-labs)
 
-## Introduction
+## 🎩 Basic Helm Charts Template 🚢
 
-🚀 This repository serves as a basic template for creating new
-repositories. It's designed to be a foundation for structure and
-organization. 🎯
+Welcome to the Basic Helm Charts Template repository! 🚀 This repo
+provides a clean, minimal starting point for creating and managing
+Helm charts for Kubernetes applications. 🎯
 
-### 🌍 Key Features
+### 🌟 Key Features
 
-- 📦 A clean, reusable structure for quick repo setup.
-- 🗣️ Language-specific templates can inherit and extend from this base.
-- 🔄 Easily customizable for various projects and use cases.
+- 📂 Pre-organized structure for efficient chart development.
+- 🛠️ Includes essential templates for ConfigMaps, Deployments, Services, and more.
+- 🔧 Easy customization for a wide range of Kubernetes workloads.
+- 📜 Follows Helm best practices for readability and maintainability.
 
 ### ✨ Perfect for
 
-- Developers looking for a clean start 🛠️
-- Language-specific templates 👨‍💻
-- Seamless repository setup for quick deployments ⚡
+- Developers and DevOps teams setting up new Helm charts quickly 🛠️
+- Learning Helm with a streamlined template 📚
+- Building consistent and reusable deployment configurations 🚀
 
-Feel free to fork, extend, and contribute! 🤝
+Clone, customize, and deploy with confidence! 🤝
 
 ## Usage
 
@@ -41,6 +42,7 @@ Update the repository settings:
 ```bash
 gh repo edit --add-topic devops,reliability-engineering,axes \
 --add-topic infrastructure-as-code,viking,mosher-labs \
+--add-topic helm,helm-charts,kubernetes,k8s \
 --delete-branch-on-merge --enable-discussions=false \
 --enable-issues=false --enable-merge-commit=false \
 --enable-projects=false --enable-rebase-merge=false \
@@ -82,7 +84,14 @@ Update the templated information:
 
 ### README.md
 
-- [ ] Replace `basic-repo-template` with your `<FORK_NAME>`
+- [ ] Replace `basic-helm-charts-template` with your `<FORK_NAME>`
+- [ ] Run this command to update template information:
+
+  ```bash
+  sed -e 's/basic-helm-charts-template/<FORK_NAME>/g' | \
+  find . -type f ! -path './.git/*'
+  ```
+
 - [ ] Update the "Introduction" section
 - [ ] Update the "Usage" section
 - [ ] Update the "Contributing" section
